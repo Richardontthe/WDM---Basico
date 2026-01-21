@@ -1,0 +1,163 @@
+Etiquetas HTML5 usadas, características principales, ejemplos y referencia W3Schools:
+
+Estructura base de una página HTML
+-----------------------------------
+Una página web en HTML se compone de una estructura básica que permite organizar y definir el contenido y los metadatos del documento. Los principales componentes son:
+
+1. <!DOCTYPE html>
+   - Indica al navegador que el documento está escrito en HTML5.
+
+2. <html>
+   - Es la raíz del documento. Todos los elementos HTML deben estar dentro de esta etiqueta.
+   - Puede incluir el atributo `lang` para especificar el idioma del contenido (por ejemplo, <html lang="es">).
+
+3. <head>
+   - Contiene información sobre el documento (metadatos) que no se muestra directamente en la página.
+   - Etiquetas base dentro de <head>:
+     - <title>: Define el título de la página que aparece en la pestaña del navegador.
+     - <meta charset="utf-8">: Especifica la codificación de caracteres, recomendada para soportar caracteres especiales.
+     - <meta name="viewport" content="width=device-width, initial-scale=1.0">: Hace que la página sea responsiva en dispositivos móviles.
+     - <meta name="description" content="Descripción de la página">: Proporciona una breve descripción para buscadores.
+     - <link rel="stylesheet" href="estilos.css">: Vincula archivos CSS externos.
+     - <link rel="icon" href="favicon.ico">: Define el ícono de la pestaña.
+   - Las etiquetas <meta> permiten definir metadatos como autor, descripción, palabras clave, codificación, y configuración para dispositivos móviles. Son importantes para el SEO y la accesibilidad.
+
+4. <body>
+   - Contiene todo el contenido visible de la página: textos, imágenes, enlaces, menús, etc.
+
+Ejemplo de estructura mínima:
+-----------------------------------
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+  </head>
+  <body>
+    <!-- Contenido visible aquí -->
+  </body>
+</html>
+
+1. <!DOCTYPE html>
+- Indica que el documento es HTML5.
+- Ejemplo: <!DOCTYPE html>
+- Referencia: https://www.w3schools.com/tags/tag_doctype.asp
+
+2. <html>
+- Raíz del documento HTML.
+- Ejemplo:
+  <html lang="en">
+    ...
+  </html>
+- Referencia: https://www.w3schools.com/tags/tag_html.asp
+
+3. <head>
+- Contiene metadatos, título y enlaces a recursos externos.
+- Ejemplo:
+  <head>
+    <title>Mi página</title>
+  </head>
+- Referencia: https://www.w3schools.com/tags/tag_head.asp
+
+4. <body>
+- Contenido visible de la página web.
+- Ejemplo:
+  <body>
+    <h1>Hola Mundo</h1>
+  </body>
+- Referencia: https://www.w3schools.com/tags/tag_body.asp
+
+5. <header>
+- Encabezado de la página o sección. Suele contener el logo, título y navegación.
+- Ejemplo:
+  <header>
+    <h1>Mi Sitio</h1>
+  </header>
+- Referencia: https://www.w3schools.com/tags/tag_header.asp
+
+6. <nav>
+- Menú de navegación principal del sitio.
+- Ejemplo:
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+- Referencia: https://www.w3schools.com/tags/tag_nav.asp
+
+7. <main>
+- Contenido principal y único de la página. Solo debe haber uno por documento.
+- Ejemplo:
+  <main>
+    <h2>Contenido</h2>
+  </main>
+- Referencia: https://www.w3schools.com/tags/tag_main.asp
+
+8. <section>
+- Agrupa contenido relacionado en bloques temáticos.
+- Ejemplo:
+  <section>
+    <h2>Servicios</h2>
+  </section>
+- Referencia: https://www.w3schools.com/tags/tag_section.asp
+
+9. <article>
+- Contenido independiente y autocontenido, como una noticia, entrada de blog o bloque destacado.
+- Ejemplo:
+  <article>
+    <h2>Noticia</h2>
+    <p>Texto de la noticia.</p>
+  </article>
+- Referencia: https://www.w3schools.com/tags/tag_article.asp
+
+10. <aside>
+- Contenido complementario, como enlaces, publicidad o información adicional.
+- Ejemplo:
+  <aside>
+    <h2>Enlaces útiles</h2>
+  </aside>
+- Referencia: https://www.w3schools.com/tags/tag_aside.asp
+
+11. <footer>
+- Pie de página, contiene información legal, de contacto o enlaces finales.
+- Ejemplo:
+  <footer>
+    <p>Copyright 2026</p>
+  </footer>
+- Referencia: https://www.w3schools.com/tags/tag_footer.asp
+
+12. <h1>, <h2>
+- Encabezados de diferentes niveles. <h1> es el principal, <h2> es secundario.
+- Ejemplo:
+  <h1>Título principal</h1>
+  <h2>Subtítulo</h2>
+- Referencia: https://www.w3schools.com/tags/tag_hn.asp
+
+13. <ul>, <li>
+- Listas no ordenadas y sus elementos.
+- Ejemplo:
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+  </ul>
+- Referencia: https://www.w3schools.com/tags/tag_ul.asp
+
+14. <p>
+- Párrafos de texto.
+- Ejemplo:
+  <p>Este es un párrafo.</p>
+- Referencia: https://www.w3schools.com/tags/tag_p.asp
+
+15. <img>
+- Imágenes. Se usa el atributo src para la ruta y alt para el texto alternativo.
+- Ejemplo:
+  <img src="imagen.jpg" alt="Descripción">
+- Referencia: https://www.w3schools.com/tags/tag_img.asp
+
+Características principales:
+- Las etiquetas semánticas ayudan a organizar y dar significado al contenido.
+- Mejoran la accesibilidad y el SEO.
+- Facilitan la lectura y el mantenimiento del código.
+- No requieren CSS para funcionar, pero pueden ser estilizadas si se desea.

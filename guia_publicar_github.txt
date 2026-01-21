@@ -1,0 +1,100 @@
+GUIA RESUMIDA: Publicar código desde VS Code a GitHub y GitHub Pages
+
+1. Instalar extensión en VS Code:
+   - Abrir VS Code → Extensions
+   - Buscar: GitHub Pull Requests and Issues
+   - Instalar
+   - Iniciar sesión: Ctrl+Shift+P → GitHub: Sign in
+   
+2. Configurar Git (una sola vez):
+   git config --global user.name "Tu Nombre"
+   git config --global user.email "tu-correo@github.com"
+   git --version
+
+3. Abrir proyecto:
+   - VS Code → File > Open Folder
+
+4. Inicializar repositorio:
+   git init
+
+5. Primer commit:
+   git add .
+   git commit -m "Primer commit"
+
+6. Crear repositorio en GitHub:
+   - GitHub → New repository
+   - Nombre: mi-proyecto
+   - NO crear README
+   - Create
+
+7. Conectar repositorio local con GitHub:
+   git remote add origin https://github.com/TU_USUARIO/mi-proyecto.git
+   git branch -M main
+   git push -u origin main
+
+8. Flujo diario:
+   git add .
+   git commit -m "Cambio X"
+   git push
+
+9. Publicar sitio web estático (GitHub Pages):
+   - Estructura:
+       index.html
+       style.css (opcional)
+       script.js (opcional)
+   - Ir a GitHub → Repo → Settings → Pages
+   - Source: main / root
+   - Guardar
+   - URL: https://TU-USUARIO.github.io/mi-proyecto/
+
+10. Nota:
+   El archivo index.html debe estar en la raíz del repositorio.
+
+
+--------------------------------------------------------------------
+GUIA ADICIONAL: Trabajo colaborativo (varios desarrolladores)
+
+1. Flujo recomendado para un sitio web estático:
+   - Todos trabajan sobre la rama principal: main
+   - Cada cambio debe ser pequeño, claro y probado
+   - En sitios estáticos NO hacer ramas innecesarias (opcional para simplificar)
+
+2. Antes de trabajar (SIEMPRE):
+   git pull   # actualiza tu copia local
+
+3. Hacer cambios:
+   - Editar archivos HTML/CSS/JS
+
+4. Guardar cambios localmente:
+   git add .
+   git commit -m "Descripción clara del cambio"
+
+5. Subir cambios:
+   git push
+
+6. Si aparece conflicto:
+   - VS Code mostrará las diferencias
+   - Elegir entre:
+       - "Accept Incoming Change"
+       - "Accept Current Change"
+       - "Accept Both"
+   - Luego:
+       git add .
+       git commit -m "Resolver conflicto"
+       git push
+
+7. Flujo ideal si hay muchos colaboradores:
+   a) Antes de iniciar:
+      git pull
+   b) Desarrollar
+   c) git add .
+      git commit -m "Cambio X"
+      git push
+
+8. Buenas prácticas:
+   - Nunca trabajar 2 personas editando el mismo archivo al mismo tiempo
+   - Commit frecuentes con mensajes claros
+   - Siempre correr pruebas visuales en navegador antes de push
+
+Fin.
+--------------------------------------------------------------------
